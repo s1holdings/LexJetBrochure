@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  /*background: #000;
+  height: 100%;
+  overflow: hidden;*/
+}
+
+* {
+      padding: 0;
+      margin: 0;
+      -webkit-user-select: none;
+      user-select: none;
+      color: #333;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+      font-weight: normal;
+      text-decoration: none;
+      outline: none;
+      cursor: default;
+    }
+    #page-1 { background-color: #fff; }
+    #page-2 { background-color: #88FF88; }
+    #page-3 { background-color: #8888FF; }
+    .page { text-align: center; margin-top: 60px; }
+    h1 {
+      margin-top: 40px;
+      margin-bottom: 40px;
+      font-size: 32px;
+      color: #555;
+    }
+    h1 strong {
+      font-size: 32px;
+      font-weight: bold;
+      color: #555;
+    }
+    button {
+      border: none;
+      padding: 10px 40px;
+      background-color: #FFF;
+      color: #555;
+      box-shadow: 0 3px 0 rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+    button:active, .btn:active, .btn:active a {
+      -webkit-transform: translate(0, 3px);
+      transform: translate(0, 3px);
+      box-shadow: none;
+    }
+
+.page {
+  height: 100%;
+  /*overflow: scroll;*/
+  position: absolute;
+  visibility: hidden;
+  width: 100%;
+}
+
+.current-page {
+  visibility: visible;
+  z-index: 1;
+}
+
+/* ISA Styles */
+.col-md-6.logocont {
+    margin-top: 10px;
+}
+
+.container-fluid {
+  margin: 0 !important;
+}
+
+.desctable td {
+  vertical-align: top;
+}
+
+.logoimg {
+  height: 40px;
+}
+
+.maincontent, .maincontainer, .mainrow, .mainpic, .textcol, .thumbcol {
+    height: 100%;
+}
+
+#mainpic1 {
+  background-image: url('../img/Decor-Main-CC-04-25-17_01.jpg');
+  background-size: cover;
+  overflow: hidden;
+  padding: 0 !important;
+  height: 100%;
+}
+
+#navlist li {
+    display: inline;
+    list-style-type: none;
+    padding-right: 20px;
+}
+
+.thumb1 {
+    height: 25%;
+}
+
+.topmenu {
+    position: absolute;
+    background-color: #fff;
+    height: 40px;
+    width: 100%;
+    z-index: 999;
+}
+
+.col-md-6.navcont {
+  text-align: right;
+}
+
+.fleft {
+  float: left;
+}
+
+.inlinehead {
+  display: inline-block;
+}
+
+.lthead {
+  margin: 0;
+}
+
+.textcol {
+  text-align: left;
+}
+
+ul#navlist {
+    margin-top: 17px;
+}
+
+ul#navlist li a {
+    color: #0a2755;
+    font-weight: bold;
+}
