@@ -189,6 +189,15 @@ body {
   /*max-height: 970px;*/
 }
 
+h3.bloglink a {
+  font-size: 24px;
+}
+
+h3.bloglink a:hover {
+  color: #900;
+  text-decoration: none;
+}
+
 .inlinehead {
   display: inline-block;
 }
