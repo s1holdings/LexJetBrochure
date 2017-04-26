@@ -4,9 +4,9 @@
 }
 
 html, body {
-  /*background: #000;
+  /*background: #000;*/
   height: 100%;
-  overflow: hidden;*/
+  overflow: auto;
 }
 
 * {
@@ -23,8 +23,8 @@ html, body {
       cursor: default;
     }
     #page-1 { background-color: #fff; }
-    #page-2 { background-color: #88FF88; }
-    #page-3 { background-color: #8888FF; }
+    #page-2 { background-color: #fff; }
+    #page-3 { background-color: #fff; }
     .page { text-align: center; margin-top: 60px; }
     h1 {
       margin-top: 40px;
@@ -52,21 +52,32 @@ html, body {
     }
 
 .page {
-  height: 100%;
-  /*overflow: scroll;*/
+  /*height: 100%;
+  overflow: scroll;*/
   position: absolute;
-  visibility: hidden;
+  display: none;
   width: 100%;
 }
 
 .current-page {
-  visibility: visible;
+  display: block;
   z-index: 1;
 }
 
 /* ISA Styles */
+body {
+  max-height: 1024px;
+}
 .col-md-6.logocont {
     margin-top: 10px;
+}
+
+.col-md-6.navcont {
+  text-align: right;
+}
+
+.col-xs-4.logocont {
+  margin-top: 3px;
 }
 
 .container-fluid {
@@ -77,20 +88,63 @@ html, body {
   vertical-align: top;
 }
 
+.fa-stack-2x {
+  color: #0060a4;
+}
+
+.fleft {
+  float: left;
+}
+
+.mainpic {
+  margin: 0 auto;
+  /*max-height: 970px;*/
+}
+
+.inlinehead {
+  display: inline-block;
+}
+
 .logoimg {
   height: 40px;
 }
 
-.maincontent, .maincontainer, .mainrow, .mainpic, .textcol, .thumbcol {
-    height: 100%;
+.lthead {
+  margin: 0;
 }
 
+/*.maincontent, .maincontainer, .mainpic {
+    height: auto;
+}*/
+
 #mainpic1 {
-  background-image: url('../img/Decor-Main-CC-04-25-17_01.jpg');
+  background-image: url('../img/Decor White Background.jpg');
   background-size: cover;
-  overflow: hidden;
   padding: 0 !important;
-  height: 100%;
+  height: auto;
+}
+
+#mainpic2 {
+  background-image: url('../img/Hospitality White Background.jpg');
+  background-size: cover;
+  padding: 0 !important;
+  height: auto;
+}
+
+#mainpic2 {
+  background-image: url('../img/Retail White Background.jpg');
+  background-size: cover;
+  padding: 0 !important;
+  height: auto;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #ddd !important;
+}
+
+.navbar-default .navbar-toggle {
+    background-color: #f8f8f8 !important;
+    border-color: #ddd !important;
 }
 
 #navlist li {
@@ -99,43 +153,59 @@ html, body {
     padding-right: 20px;
 }
 
+p {
+    margin: 0 0 30px !important;
+}
+
 .thumb1 {
-    height: 25%;
+    max-height: 250px;
+    width: 100%
 }
 
 .topmenu {
-    position: absolute;
+    position: fixed;
     background-color: #fff;
-    height: 40px;
+    height: 46px;
     width: 100%;
     z-index: 999;
-}
-
-.col-md-6.navcont {
-  text-align: right;
-}
-
-.fleft {
-  float: left;
-}
-
-.inlinehead {
-  display: inline-block;
-}
-
-.lthead {
-  margin: 0;
 }
 
 .textcol {
   text-align: left;
 }
 
+.text-primary {
+    color: #fff !important;
+    margin-top: -1px !important;
+}
+
 ul#navlist {
-    margin-top: 17px;
+    margin-top: 11px;
 }
 
 ul#navlist li a {
-    color: #0a2755;
+    color: #0060a4;
     font-weight: bold;
+}
+
+ul#navlist li a:hover {
+    color: #900;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+    ul#navlist {
+      position: fixed;
+      right: -2px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    ul#navlist {
+      position: fixed;
+      right: -2px;
+    }
+    ul#navlist li a {
+      font-size: 12px;
+    }
 }
