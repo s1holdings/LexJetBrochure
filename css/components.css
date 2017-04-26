@@ -165,7 +165,7 @@ body {
 }
 
 .col-xs-4.logocont {
-  margin-top: 3px;
+  margin-top: 10px;
 }
 
 .container-fluid {
@@ -270,13 +270,32 @@ p {
 }
 
 .thumb1 {
+    cursor: pointer;
     min-height: 250px;
     width: 100%
 }
 
 .thumb2 {
+    cursor: pointer;
     min-height: 200px;
     width: 100%
+}
+
+.thumb1:hover, .thumb2:hover {
+    /* IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+
+    /* IE 5-7 */
+    filter: alpha(opacity=50);
+
+    /* Netscape */
+    -moz-opacity: 0.5;
+
+    /* Safari 1.x */
+    -khtml-opacity: 0.5;
+
+    /* Good browsers */
+    opacity: 0.5;
 }
 
 .topmenu {
@@ -339,7 +358,7 @@ ul#navlist li a:hover {
     .col-xs-4.logocont {
         margin-top: 22px;
     }
-    
+
     #navlist li {
         display: list-item;
     }
