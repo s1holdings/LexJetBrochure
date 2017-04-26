@@ -12,8 +12,8 @@ html, body {
 * {
       padding: 0;
       margin: 0;
-      -webkit-user-select: none;
-      user-select: none;
+      /*-webkit-user-select: none;
+      user-select: none;*/
       color: #333;
       font-family: 'Open Sans', sans-serif;
       font-size: 16px;
@@ -88,6 +88,67 @@ html, body {
 
 .backpic4 {
   background-image: url("../img/decor-thumb-4.jpg");
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.backpic5 {
+  background-image: url("../img/hospitality-thumb-1.jpg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  border-bottom: 4px solid #fff;
+}
+
+.backpic6 {
+  background-image: url("../img/hospitality-thumb-2.jpg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  border-bottom: 4px solid #fff;
+}
+
+.backpic7 {
+  background-image: url("../img/hospitality-thumb-3.jpg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  border-bottom: 4px solid #fff;
+}
+
+.backpic8 {
+  background-image: url("../img/hospitality-thumb-4.jpg");
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.backpic9 {
+  background-image: url("../img/retail-thumb-1.jpg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  border-bottom: 4px solid #fff;
+}
+
+.backpic10 {
+  background-image: url("../img/retail-thumb-2.jpg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  border-bottom: 4px solid #fff;
+}
+
+.backpic11 {
+  background-image: url("../img/retail-thumb-3.jpg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  border-bottom: 4px solid #fff;
+}
+
+.backpic12 {
+  background-image: url("../img/retail-thumb-4.jpg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  border-bottom: 4px solid #fff;
+}
+
+.backpic13 {
+  background-image: url("../img/retail-thumb-5.jpg");
   background-repeat: no-repeat;
   background-position: left top;
 }
@@ -180,12 +241,21 @@ body {
     padding-right: 20px;
 }
 
+.nomarg {
+    margin-bottom: 2px !important;
+}
+
 p {
     margin: 0 0 30px !important;
 }
 
 .thumb1 {
     min-height: 250px;
+    width: 100%
+}
+
+.thumb2 {
+    min-height: 200px;
     width: 100%
 }
 
