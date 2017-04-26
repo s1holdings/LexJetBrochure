@@ -190,6 +190,7 @@ body {
 }
 
 h3.bloglink a {
+  cursor: pointer;
   font-size: 24px;
 }
 
@@ -208,6 +209,16 @@ h3.bloglink a:hover {
 
 .lthead {
   margin: 0;
+}
+
+.lthead a {
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.lthead a:hover {
+  color: #900;
+  text-decoration: none;
 }
 
 /*.maincontent, .maincontainer, .mainpic {
@@ -291,6 +302,7 @@ ul#navlist {
 
 ul#navlist li a {
     color: #0060a4;
+    cursor: pointer;
     font-weight: bold;
 }
 
