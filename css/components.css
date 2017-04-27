@@ -281,6 +281,11 @@ p {
     width: 100%
 }
 
+.thumb3 {
+    min-height: 250px;
+    width: 100%
+}
+
 .thumb1:hover, .thumb2:hover {
     /* IE 8 */
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
